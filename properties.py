@@ -91,11 +91,14 @@ index_prop = {
              'units': 'mm/año'},
 
     'PRCPTOT': {'var_values': np.linspace(0, 6000),
+                'var_values_proj': np.linspace(0, 6000),
                 'anom_values': np.linspace(-900, 900),
+                'anom_values_proj': np.linspace(-900, 900),
                 'trend_values': np.linspace(-200, 200),
                 'cmap': "Spectral_r",
                 'cmap_trend': 'BrBG',
                 'cmap_anom': 'BrBG',
+                'cmap_anom_proj': 'BrBG',
                 'units': 'mm/año'},
 
     'SDII': {'var_values': np.linspace(0, 30),

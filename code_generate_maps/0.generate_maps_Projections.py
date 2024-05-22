@@ -102,7 +102,7 @@ source = ['HighResMIP-CMIP6']
 scenarios_key = ['ssp585', 'ssp245']
 
 # Define a list of lists containing climate indices
-index_ls = ['R95p']
+index_ls = ['PRCPTOT']
 
 # index_ls = ['TXn']
 
