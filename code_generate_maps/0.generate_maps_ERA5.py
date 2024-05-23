@@ -27,9 +27,12 @@ def get_files_in_folder(path, pattern):
 # %%
 root = '/home/cambio_climatico/climate_index_data/ERA5/Indices/'
 
-index_ls = ['TXx', 'TXn', 'TNx', 'TNn',
-            'TX90p', 'TX10p', 'TN90p', 'TN10p',
-            'DTR', 'WSDI']
+index_ls = ['TXx', 'TXn', 'TNx', 'TNn', 'TX90p', 'TX10p', 'TN90p',
+            'TN10p', 'DTR', 'WSDI']
+
+index_ls = ['TN90p', 'TN10p']
+# index_ls = ['TX10p']
+
 time_range = '1979-2014'
 ds_dic = {}
 source = 'ERA5'
@@ -93,6 +96,8 @@ for i, index in enumerate(index_ls):
     namefig = f'{source}_{index}_{scenario}_{time_range}'
     plt.savefig(f"{path_fig}{namefig}.png", pad_inches=0.0,
                 bbox_inches='tight', dpi=500, transparent=True)
+    
+
     plt.close(fig)
     
     fig = plt.figure(figsize=(15, 7), facecolor='w', edgecolor='w')

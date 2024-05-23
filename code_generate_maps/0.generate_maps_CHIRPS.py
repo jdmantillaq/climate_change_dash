@@ -28,7 +28,7 @@ root = '/home/cambio_climatico/climate_index_data/CHIRPS/Indices/'
 index_ls = ['R5mm', 'R10mm', 'R20mm', 'R50mm', 'CDD', 'CWD', 'R95p',
             'R99p', 'PRCPTOT', 'SDII', 'P75y', 'P90y', 'P95y']
 
-index_ls = ['R5mm', 'R10mm', 'R20mm', 'R50mm']
+#index_ls = ['R5mm', 'R10mm', 'R20mm', 'R50mm']
 
 time_range = '1981-2014'
 ds_dic = {}

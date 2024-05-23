@@ -1,7 +1,4 @@
 # %%
-
-
-
 import warnings
 import seaborn as sns
 import pandas as pd
@@ -24,7 +21,6 @@ sns.set_context('notebook', font_scale=1.3)
 
 def get_files_in_folder(path, pattern):
     return np.sort(glob.glob(os.path.join(path, pattern)))
-
 
 
 path_fig = '/home/cambio_climatico/climate_change_dash/assets/'
@@ -92,19 +88,31 @@ label_ssp = {'ssp245': 'SSP2-4.5',
 
 
 # Define the analysis variable (pr in this case)
-analisys = 'pr'
+analisys = ['tas', 'pr']
+
+analisys = analisys[0]
 
 # Define the source models to be used
 source = ['NEX-GDDP-CMIP6', 'HighResMIP-CMIP6']
-source = ['HighResMIP-CMIP6']
+source = ['NEX-GDDP-CMIP6']
 
 # Define the scenario keys to be analyzed
 scenarios_key = ['ssp585', 'ssp245']
 
 # Define a list of lists containing climate indices
-index_ls = ['PRCPTOT']
 
-# index_ls = ['TXn']
+index_list = {'pr': ['R5mm', 'R10mm', 'R20mm', 'R50mm', 'CDD', 'CWD',
+                     'R95p', 'R99p', 'PRCPTOT', 'SDII', 'P75y', 'P90y',
+                     'P95y'],
+              'tas': ['TXx', 'TXn', 'TNx', 'TNn', 'TX90p', 'TX10p', 'TN90p',
+                      'TN10p', 'DTR', 'WSDI']}
+
+index_ls = index_list[analisys]
+
+
+index_ls = ['TX10p']
+
+index_ls = ['TX90p', 'TX10p', 'TN90p', 'TN10p']
 
 # Define the path for climate index data
 path = '/home/cambio_climatico/climate_index_data/'
@@ -194,7 +202,7 @@ for source_i in source:
                         fig.savefig(f"{path_fig}{namefig}.png", pad_inches=0.0,
                                     bbox_inches='tight', dpi=500,
                                     transparent=True)
-                        
+
                         plt.close('all')
 
-#%%
+# %%
