@@ -90,11 +90,11 @@ label_ssp = {'ssp245': 'SSP2-4.5',
 # Define the analysis variable (pr in this case)
 analisys = ['tas', 'pr']
 
-analisys = analisys[0]
+analisys = analisys[1]
 
 # Define the source models to be used
 source = ['NEX-GDDP-CMIP6', 'HighResMIP-CMIP6']
-source = ['NEX-GDDP-CMIP6']
+# source = ['NEX-GDDP-CMIP6']
 
 # Define the scenario keys to be analyzed
 scenarios_key = ['ssp585', 'ssp245']
@@ -110,9 +110,9 @@ index_list = {'pr': ['R5mm', 'R10mm', 'R20mm', 'R50mm', 'CDD', 'CWD',
 index_ls = index_list[analisys]
 
 
-index_ls = ['TX10p']
+index_ls = ['R50mm']
 
-index_ls = ['TX90p', 'TX10p', 'TN90p', 'TN10p']
+# index_ls = ['TX90p', 'TX10p', 'TN90p', 'TN10p']
 
 # Define the path for climate index data
 path = '/home/cambio_climatico/climate_index_data/'

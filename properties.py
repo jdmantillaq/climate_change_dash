@@ -35,10 +35,10 @@ index_prop = {
               'cmap_trend': 'RdBu',
               'units': 'días/año'},
 
-    'R50mm': {'var_values': np.linspace(0, 100),
-              'var_values_proj': np.linspace(0, 100),
+    'R50mm': {'var_values': np.linspace(0, 30),
+              'var_values_proj': np.linspace(0, 30),
               'anom_values': np.linspace(-30, 30),
-              'anom_values_proj': np.linspace(-20, 20),
+              'anom_values_proj': np.linspace(-8, 8),
               'trend_values': np.linspace(-4, 4),
               'cmap': 'viridis',
               'cmap_anom': 'RdBu',
