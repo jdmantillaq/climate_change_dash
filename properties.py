@@ -12,7 +12,7 @@ index_prop = {
              'cmap_anom_proj': 'RdBu',
              'cmap_trend': 'RdBu',
              'units': 'días/año',
-             'label': 'Recuento anual de días en los que la precipitación es '\
+             'description': 'Recuento anual de días en los que la precipitación es '\
                       'superior o igual a 5 mm'},
 
     'R10mm': {'var_values': np.linspace(0, 250),
@@ -25,7 +25,7 @@ index_prop = {
               'cmap_anom_proj': 'RdBu',
               'cmap_trend': 'RdBu',
               'units': 'días/año',
-              'label': 'Recuento anual de días en los que la precipitación es'\
+              'description': 'Recuento anual de días en los que la precipitación es'\
                        ' superior o igual a 10 mm'},
 
     'R20mm': {'var_values': np.linspace(0, 150),
@@ -38,7 +38,7 @@ index_prop = {
               'cmap_anom_proj': 'RdBu',
               'cmap_trend': 'RdBu',
               'units': 'días/año',
-              'label': 'Recuento anual de días en los que la precipitación es'\
+              'description': 'Recuento anual de días en los que la precipitación es'\
                        ' superior o igual a 20 mm'},
 
     'R50mm': {'var_values': np.linspace(0, 30),
@@ -51,7 +51,7 @@ index_prop = {
               'cmap_anom_proj': 'RdBu',
               'cmap_trend': 'RdBu',
               'units': 'días/año',
-              'label': 'Recuento anual de días en los que la precipitación es'\
+              'description': 'Recuento anual de días en los que la precipitación es'\
                        ' superior o igual a 50 mm'},
 
     'CDD': {'var_values': np.linspace(0, 60),
@@ -64,7 +64,7 @@ index_prop = {
             'cmap_anom_proj': 'RdBu_r',
             'cmap': 'plasma',
             'units': 'días/año',
-            'label': 'Días secos consecutivos'},
+            'description': 'Días secos consecutivos'},
 
     'CWD': {'var_values': np.linspace(0, 60),
             'var_values_proj': np.linspace(0, 100),
@@ -76,7 +76,7 @@ index_prop = {
             'cmap_anom_proj': 'RdBu_r',
             'cmap': 'plasma',
             'units': 'días/año',
-            'label': 'Días húmedos consecutivos'},
+            'description': 'Días húmedos consecutivos'},
 
     'R95p': {'var_values': np.linspace(0, 1000),
              'var_values_proj': np.linspace(0, 1000),
@@ -88,7 +88,7 @@ index_prop = {
              'cmap_anom_proj': 'BrBG',
              'cmap_trend': 'BrBG',
              'units': 'mm/año',
-             'label': 'Precipitación total anual cuando la precipitación '\
+             'description': 'Precipitación total anual cuando la precipitación '\
                       'diaria supera el percentil 95 de la precipitación en '\
                       'día húmedo (>1 mm)'},
 
@@ -102,7 +102,7 @@ index_prop = {
              'cmap_anom': 'BrBG',
              'cmap_anom_proj': 'BrBG',
              'units': 'mm/año',
-             'label': 'Precipitación total anual cuando la precipitación '\
+             'description': 'Precipitación total anual cuando la precipitación '\
                       'diaria supera el percentil 99 de la precipitación en '\
                       'día húmedo (>1 mm)'},
 
@@ -116,7 +116,7 @@ index_prop = {
                 'cmap_anom': 'BrBG',
                 'cmap_anom_proj': 'BrBG',
                 'units': 'mm/año',
-                'label': 'Precipitación total anual en días húmedos'},
+                'description': 'Precipitación total anual en días húmedos'},
 
     'SDII': {'var_values': np.linspace(0, 30),
              'var_values_proj': np.linspace(0, 30),
@@ -128,7 +128,7 @@ index_prop = {
              'cmap_anom': 'BrBG',
              'cmap_anom_proj': 'BrBG',
              'units': 'mm/día',
-             'label': 'Índice simple de intensidad diaria'},
+             'description': 'Índice simple de intensidad diaria'},
 
     'P75y': {'var_values': np.linspace(0, 60),
              'var_values_proj': np.linspace(0, 60),
@@ -140,7 +140,7 @@ index_prop = {
              'cmap_anom': 'BrBG',
              'cmap_anom_proj': 'BrBG',
              'units': 'mm/día',
-             'label': 'Percentil 75 de precipitación anual'},
+             'description': 'Percentil 75 de precipitación anual'},
 
     'P90y': {'var_values': np.linspace(0, 60),
              'var_values_proj': np.linspace(0, 60),
@@ -152,7 +152,7 @@ index_prop = {
              'cmap_anom': 'BrBG',
              'cmap_anom_proj': 'BrBG',
              'units': 'mm/día',
-             'label': 'Percentil 90 de precipitación anual'},
+             'description': 'Percentil 90 de precipitación anual'},
 
     'P95y': {'var_values': np.linspace(0, 60),
              'var_values_proj': np.linspace(0, 60),
@@ -164,7 +164,7 @@ index_prop = {
              'cmap_anom': 'BrBG',
              'cmap_anom_proj': 'BrBG',
              'units': 'mm/día',
-             'label': 'Percentil 95 de precipitación anual'},
+             'description': 'Percentil 95 de precipitación anual'},
 
     # Indices de Temperatura
     'TXx': {'var_values': np.linspace(18, 50),
@@ -177,7 +177,7 @@ index_prop = {
             'cmap_anom_proj': 'RdBu_r',
             'cmap_trend': 'RdBu_r',
             'units': '°C',
-            'label': 'Valor máximo mensual de la temperatura máxima diaria'},
+            'description': 'Valor máximo mensual de la temperatura máxima diaria'},
 
     'TXn': {'var_values': np.linspace(10, 30),
             'var_values_proj': np.linspace(10, 30),
@@ -189,7 +189,7 @@ index_prop = {
             'cmap_anom_proj': 'RdBu_r',
             'cmap_trend': 'RdBu_r',
             'units': '°C',
-            'label': 'Valor mínimo mensual de la temperatura máxima diaria'},
+            'description': 'Valor mínimo mensual de la temperatura máxima diaria'},
 
     'TNx': {'var_values': np.linspace(6, 32),
             'var_values_proj': np.linspace(6, 50),
@@ -201,7 +201,7 @@ index_prop = {
             'cmap_anom_proj': 'RdBu_r',
             'cmap_trend': 'RdBu_r',
             'units': '°C',
-            'label': 'Valor máximo mensual de la temperatura mínima diaria'},
+            'description': 'Valor máximo mensual de la temperatura mínima diaria'},
 
     'TNn': {'var_values': np.linspace(6, 32),
             'var_values_proj': np.linspace(6, 40),
@@ -213,7 +213,7 @@ index_prop = {
             'cmap_anom_proj': 'RdBu_r',
             'cmap_trend': 'RdBu_r',
             'units': '°C',
-            'label': 'Valor mínimo mensual de la temperatura mínima diaria'},
+            'description': 'Valor mínimo mensual de la temperatura mínima diaria'},
 
     'TX90p': {'var_values': np.linspace(0, 12),
               'var_values_proj': np.linspace(0, 100),
@@ -225,7 +225,7 @@ index_prop = {
               'cmap_anom_proj': 'Reds',
               'cmap_trend': 'RdBu_r',
               'units': '% días/año',
-              'label': 'Porcentaje de días en que la temperatura máxima '\
+              'description': 'Porcentaje de días en que la temperatura máxima '\
                        'diaria es superior al percentil 90'},
 
     'TX10p': {'var_values': np.linspace(0, 12),
@@ -238,7 +238,7 @@ index_prop = {
               'cmap_anom_proj': 'RdBu',
               'cmap_trend': 'RdBu',
               'units': '% días/año',
-              'label': 'Porcentaje de días en que la temperatura máxima '\
+              'description': 'Porcentaje de días en que la temperatura máxima '\
                        'diaria es inferior al percentil 10'},
 
     'TN90p': {'var_values': np.linspace(0, 12),
@@ -251,7 +251,7 @@ index_prop = {
               'cmap_anom_proj': 'Reds',
               'cmap_trend': 'RdBu_r',
               'units': '% días/año',
-              'label': 'Porcentaje de días en que la temperatura mínima '\
+              'description': 'Porcentaje de días en que la temperatura mínima '\
                        'diaria es superior al percentil 90'},
 
     'TN10p': {'var_values': np.linspace(0, 10),
@@ -264,7 +264,7 @@ index_prop = {
               'cmap_anom_proj': 'RdBu',
               'cmap_trend': 'RdBu',
               'units': '% días/año',
-              'label': 'Porcentaje de días en que la temperatura mínima '\
+              'description': 'Porcentaje de días en que la temperatura mínima '\
                        'diaria es inferior al percentil 10'},
 
     'DTR': {'var_values': np.linspace(6, 18),
@@ -277,7 +277,7 @@ index_prop = {
             'cmap_anom_proj': 'RdBu_r',
             'cmap_trend': 'RdBu_r',
             'units': '°C',
-            'label': 'Rango diario de temperaturas: diferencia media mensual '\
+            'description': 'Rango diario de temperaturas: diferencia media mensual '\
                      'entre TX y TN'},
 
     'WSDI': {'var_values': np.linspace(0, 30),
@@ -290,7 +290,7 @@ index_prop = {
              'cmap_anom_proj': 'Reds',
              'cmap_trend': 'RdBu_r',
              'units': 'días/año',
-             'label': 'Índice de duración de la ola de calor: recuento anual '\
+             'description': 'Índice de duración de la ola de calor, recuento anual '\
                       'de días con al menos seis días consecutivos en los que'\
                       'TX >90 percentil'},
 }
